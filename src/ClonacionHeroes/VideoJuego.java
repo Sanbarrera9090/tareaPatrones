@@ -14,6 +14,7 @@ public class VideoJuego {
 
         Magoo magoo = new Magoo();
         Arquero arquero = new Arquero();
+        Guerrero guerrero = new Guerrero();
 
         Personaje personaje = null;
 
@@ -21,10 +22,13 @@ public class VideoJuego {
         magoo.SetPoderEspecial("Rayo");
         arquero.setNombre("ashe");
         arquero.SetPoderEspecial("Ataque lejano");
+        guerrero.setNombre("Akali");
+        guerrero.SetPoderEspecial("Sombra");
 
         System.out.println("Digite la opcion que desea clonar:");
-        System.out.println("1 = mago");
-        System.out.println("2 = arquero");
+        System.out.println("1 = Mago");
+        System.out.println("2 = Arquero");
+        System.out.println("3 = Guerrero");
 
 
 
@@ -41,6 +45,10 @@ public class VideoJuego {
             System.out.println("Este es el nombre de tu personaje" + arquero.getNombre());
             System.out.println("Este es tu poner especial" + arquero.GetPoderEspecial());
             personaje = arquero.clonar();
+        } if(opcion == 3) {
+            System.out.println("Este es el nombre de tu personaje" + guerrero.getNombre());
+            System.out.println("Este es tu poner especial" + guerrero.GetPoderEspecial());
+            personaje = guerrero.clonar();
 
         }
 
@@ -54,7 +62,7 @@ public class VideoJuego {
 
         System.out.println("Esta es la figura clonada");
         System.out.println(personaje.getNombre());
-        System.out.println("este es el poder del clon");
+        System.out.println("Este es el poder del clon");
         System.out.println(personaje.GetPoderEspecial());
 
 

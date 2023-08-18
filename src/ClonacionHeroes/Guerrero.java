@@ -6,10 +6,11 @@ public class Guerrero implements Personaje {
 
     private String Poder;
 
-    private String Color;
+    private String color;
+
     @Override
     public void setNombre(String n) {
-
+        this.nombre = n;
     }
 
     @Override
@@ -19,22 +20,26 @@ public class Guerrero implements Personaje {
 
     @Override
     public void SetPoderEspecial(String c) {
-
+        this.Poder = c;
     }
 
     @Override
     public String GetPoderEspecial() {
-        return null;
+        return Poder;
     }
 
 
     @Override
     public void color(String verde) {
-        ;
+        this.color = verde;
     }
 
     @Override
     public Personaje clonar() {
-        return null;
+        Personaje personaje = new Guerrero();
+        personaje.setNombre(this.nombre);
+        personaje.SetPoderEspecial(this.Poder);
+        personaje.color(this.color);
+        return personaje;
     }
 }

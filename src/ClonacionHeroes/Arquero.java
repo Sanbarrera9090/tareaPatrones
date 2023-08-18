@@ -6,9 +6,7 @@ public class Arquero implements Personaje{
 
     private String Poder;
 
-    private String Color;
-
-
+    private String color;
     @Override
     public void setNombre(String n) {
         this.nombre = n;
@@ -34,7 +32,7 @@ public class Arquero implements Personaje{
 
     @Override
     public void color(String amarillo) {
-        ;
+        this.color = amarillo;
     }
 
     @Override
@@ -43,7 +41,7 @@ public class Arquero implements Personaje{
         Personaje personaje = new Arquero();
         personaje.setNombre(this.nombre);
         personaje.SetPoderEspecial(this.Poder);
-        personaje.color(this.Color);
+        personaje.color(this.color);
         return personaje;
     }
 }

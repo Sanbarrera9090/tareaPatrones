@@ -3,6 +3,7 @@ package ClonacionHeroes;
 public class Magoo implements Personaje{
 
     private String nombre;
+
     private String Poder;
 
     private String color;
