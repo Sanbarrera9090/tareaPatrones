@@ -38,22 +38,22 @@ public class VideoJuego {
 
 
         if (opcion == 1) {
-            System.out.println("Este es el nombre de tu personaje" + magoo.getNombre());
-            System.out.println("Este es tu poner especial" + magoo.GetPoderEspecial());
+            System.out.println("Este es el nombre de tu personaje " + magoo.getNombre());
+            System.out.println("Este es tu poner especial " + magoo.GetPoderEspecial());
             personaje = magoo.clonar();
         } if(opcion == 2) {
-            System.out.println("Este es el nombre de tu personaje" + arquero.getNombre());
-            System.out.println("Este es tu poner especial" + arquero.GetPoderEspecial());
+            System.out.println("Este es el nombre de tu personaje " + arquero.getNombre());
+            System.out.println("Este es tu poner especial " + arquero.GetPoderEspecial());
             personaje = arquero.clonar();
         } if(opcion == 3) {
-            System.out.println("Este es el nombre de tu personaje" + guerrero.getNombre());
-            System.out.println("Este es tu poner especial" + guerrero.GetPoderEspecial());
+            System.out.println("Este es el nombre de tu personaje " + guerrero.getNombre());
+            System.out.println("Este es tu poner especial " + guerrero.GetPoderEspecial());
             personaje = guerrero.clonar();
 
         }
 
 
-        personaje.setNombre(personaje.getNombre()+"clonado");
+        personaje.setNombre(personaje.getNombre()+ "clonado");
         System.out.println("Digite el nuevo poder");
         cambio = sc2.nextLine();
 
